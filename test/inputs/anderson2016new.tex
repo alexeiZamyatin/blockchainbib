@@ -12,7 +12,7 @@ We investigate the blockchains’ activity in terms of transactions and usage pa
 smart contract functionality it offers. We also carry out a
 brief analysis of issues that are introduced by negligent design of smart contracts. In the case of Namecoin, our focus
 is how the name registration is used and has developed over
-time. For Peercoin, we are interested in the use of proofof-
+time. For Peercoin, we are interested in the use of proof-of-
 stake, as this consensus algorithm is poorly understood
 yet used to move considerable value. Finally, we relate the
 above to the fundamental characteristics of the underlying
@@ -20,4 +20,29 @@ peer-to-peer networks. We present a crawler for Ethereum
 and give statistics on the network size. For Peercoin and
 Namecoin, we identify the relatively small size of the networks and the weak bootstrapping process.
 
-\textbf{Notes:} 
+\textbf{Notes:}\\
+\emph{Relevant for Namecoin and merged mining topic:}
+\begin{itemize}
+\item Analysis until block 285,077
+\item 93\% of these blocks are merged mined (265,747)
+\item Merged mining was introduced after block 19,200
+\item Since block 19,200 only 130 blocks were NOT merged mined
+\item 98,3\% of all NMC transactions are contained in merged mined blocks
+\item Almost Namecoin's entire computation power comes from merged mining with Bitcoin
+\item Storage overhead in Namecoin is close to 100\% due to merged mining (proof?)
+\item Two sudden surges in registrations detected, but not further analyzed. Suggestion: re-registration of expired names.
+\item The Namecoin blockchain shows very little activity. Previously reported squatting seems to go on, however at a low rate. 
+\item Namecoin has only few clients.
+\end{itemize}
+
+ 
+
+\emph{Relevant for Proof-of-X:}
+\begin{itemize}
+\item Peercoin introduces a proof of stake mechanism, which replaced the proof-of-work concept of this cryptocurrency. As of today the proof-of-work block in Peercoin constitute the vast majority of all mined blocks. 
+\end{itemize}
+
+\textbf{Reading:}
+\begin{itemize}
+\item  Peercoin Whitepaper - Sunny King and Scott Nadal. PPCoin: Peer-to-peer crypto-currency with proof-of-stake. Whitepaper by project. Online: https://peercoin.net/whitepaper, 2012.
+\end{itemize}
